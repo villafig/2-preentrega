@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+
+
+
+body{
+    font-family: 'Itim', cursive;
+    background-color: azure;
+}
+
+h1{
+    font-weight: 700;
+    text-decoration: underline;
+    text-align: center;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+}
+
+ul li{
+    list-style-type: armenian;
+    display: inline-block;
+}
+
+ul li a{
+    text-decoration: none;
+    color: black;
+    text-transform: lowercase;
+    font-weight: 300;
+    margin: 55px;
+}
+
+header{
+    border: 5px solid black;
+}
+
+main{
+    
+    text-align: justify;
+}
+
+main p{
+    margin: 20px;
+}
+
+main img{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+footer{
+    text-align: end;
+
+}
+
+.Piedepagina{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 100px;
+}
+
+
+
+
+
+.gridpadre{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "main main main"
+    "sectionA sectionA sectionA"
+    "sectionB sectionB sectionC"
+    "sectionB sectionB sectionC"
+    "sectionB sectionB sectionD"
+    "footer footer footer"
+    ;
+}
+
+
+header{
+    background-color: red;
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+nav{
+    background-color: blue;
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main{
+    background-color: rebeccapurple;
+    grid-area: main;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer{
+    background-color: peru;
+    grid-area: footer;
+    
+}
+.sectionA{
+    background-color: aqua;
+    grid-area: sectionA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    direction: ltr;
+}
+
+.sectionA p {
+    margin: 20px;
+} 
+
+.sectionB{
+    background-color: blue;
+    grid-area: sectionB;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.sectionC{
+    background-color: aliceblue;
+    grid-area: sectionC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sectionD{
+    background-color: blueviolet;
+    grid-area: sectionD;display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+
+
