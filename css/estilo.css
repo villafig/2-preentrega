@@ -1,6 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 
 
+.gridpadre{
+    display: grid;
+    grid-template-areas: 
+    "header header header" 
+    "nav nav nav"
+    "sectionA sectionA sectionA"
+    "sectionB sectionB sectionB"
+    "sectionC sectionC sectionC"
+    "sectionD sectionD sectionD"
+    "footer footer footer"
+    ;
+}
 
 
 body{
@@ -38,48 +50,11 @@ header{
 }
 
 main{
-    
-    text-align: justify;
+    text-align: center;
 }
 
 main p{
-    margin: 20px;
-}
-
-main img{
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-footer{
-    text-align: end;
-
-}
-
-.Piedepagina{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 100px;
-}
-
-
-
-
-
-.gridpadre{
-    display: grid;
-    grid-template-areas: 
-    "header header header"
-    "nav nav nav"
-    "main main main"
-    "sectionA sectionA sectionA"
-    "sectionB sectionB sectionC"
-    "sectionB sectionB sectionC"
-    "sectionB sectionB sectionD"
-    "footer footer footer"
-    ;
+    margin: 10px;
 }
 
 
@@ -115,6 +90,8 @@ footer{
     grid-area: footer;
     
 }
+
+
 .sectionA{
     background-color: aqua;
     grid-area: sectionA;
@@ -153,6 +130,67 @@ footer{
     justify-content: center;
     flex-direction: column;
 }
+
+
+@media (min-width: 768px) {
+    .gridpadre {
+        display: grid;
+        grid-template-areas: 
+        "header header"
+        "nav sectionA"
+        "nav sectionA"
+        "nav sectionA"
+        "main main"
+        "footer footer"
+        ;
+    }
+}
+
+@media (min-width: 1024px) {
+    .gridpadre {
+        display: grid;
+        grid-template-areas: 
+        "header header"
+        "nav sectionA"
+        "nav sectionA"
+        "nav sectionA"
+        "main main"
+        "footer footer"
+        ;
+    }
+
+
+    @media (min-width: 350px) {
+        .gridpadre {
+            display: grid;
+            grid-template-areas: 
+            "header header"
+            "nav sectionA"
+            "nav sectionA"
+            "nav sectionA"
+            "main main"
+            "footer footer"
+            ;
+        }
+        */
+
+
+
+
+.gridpadre{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "nav nav"
+    "main main"
+    "sectionA sectionA"
+    "sectionB sectionB"
+    "sectionC sectionC"
+    "sectionB sectionD"
+    "footer footer"
+    ;
+}
+
 
 
 
