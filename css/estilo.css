@@ -137,9 +137,9 @@ footer{
     flex-direction: column;
 }
 
-
-@media (min-width: 1024px) {
+@media (max-width: 1024px){
     .gridpadre {
+        display: grid;
         grid-template-areas: 
         "header header"
         "main main"
@@ -147,6 +147,36 @@ footer{
         "sectionA sectionB"
         "sectionC sectionD"
         "footer footer"
+        ;
+    }
+}
+
+@media (max-width: 700px){
+    .gridpadre {
+        display: grid;
+        grid-template-areas: 
+        "header header"
+        "main main"
+        "nav nav"
+        "sectionB sectionA"
+        "sectionD sectionC"
+        "footer footer"
+        ;
+    }
+}
+
+@media (max-width: 300px){
+    .gridpadre {
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "sectionA"
+        "sectionB"
+        "sectionC"
+        "sectionD"
+        "nav"
+        "main"
+        "footer"
         ;
     }
 }
