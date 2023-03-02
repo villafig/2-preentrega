@@ -4,13 +4,11 @@
 .gridpadre{
     display: grid;
     grid-template-areas: 
-    "header header header" 
-    "nav nav nav"
-    "sectionA sectionA sectionA"
-    "sectionB sectionB sectionB"
-    "sectionC sectionC sectionC"
-    "sectionD sectionD sectionD"
-    "footer footer footer"
+    "header header" 
+    "nav nav"
+    "sectionA sectionB"
+    "sectionC sectionD"
+    "footer footer"
     ;
 }
 
@@ -86,14 +84,13 @@ main{
 }
 
 footer{
-    background-color: peru;
+    background-color: #808080;
     grid-area: footer;
-    
 }
 
 
 .sectionA{
-    background-color: aqua;
+    background-color: azure;
     grid-area: sectionA;
     display: flex;
     align-items: center;
@@ -104,10 +101,11 @@ footer{
 
 .sectionA p {
     margin: 20px;
+    
 } 
 
 .sectionB{
-    background-color: blue;
+    background-color: azure;
     grid-area: sectionB;    
     display: flex;
     align-items: center;
@@ -124,15 +122,16 @@ footer{
 }
 
 .sectionD{
-    background-color: blueviolet;
-    grid-area: sectionD;display: flex;
+    background-color: azure;
+    grid-area: sectionD;
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .gridpadre {
         display: grid;
         grid-template-areas: 
@@ -146,7 +145,7 @@ footer{
     }
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
     .gridpadre {
         display: grid;
         grid-template-areas: 
@@ -160,19 +159,16 @@ footer{
     }
 
 
-    @media (min-width: 350px) {
+    @media (max-width: 350px) {
         .gridpadre {
             display: grid;
             grid-template-areas: 
             "header header"
-            "nav sectionA"
-            "nav sectionA"
-            "nav sectionA"
-            "main main"
+            "sectionA"
             "footer footer"
             ;
         }
-        */
+        
 
 
 
@@ -191,6 +187,16 @@ footer{
     ;
 }
 
+
+.gridpadre{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "sectionB"
+    "footer"
+    ;
+}
 
 
 
