@@ -97,7 +97,7 @@ footer{
     background-color: goldenrod;
     grid-area: footer;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
 }
 
