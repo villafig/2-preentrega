@@ -91,11 +91,13 @@ main {
 }
 
 footer {
-  background-color: goldenrod;
+  background-color: #34AB3B;
   grid-area: footer;
   display: flex;
-  flex-direction: column-reverse;
   justify-content: center;
+  align-items: center;
+  height: 100px;
+  text-transform: lowercase;
 }
 
 .circulo {
@@ -112,11 +114,11 @@ footer {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  direction: ltr;
 }
 
 .sectionA p {
-  margin: 20px;
+  margin: 100px;
+  justify-content: safe;
 }
 
 .sectionB {
@@ -124,7 +126,7 @@ footer {
   grid-area: sectionB;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: justify;
   flex-direction: column;
 }
 
@@ -133,7 +135,7 @@ footer {
   grid-area: sectionC;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: justify;
   flex-direction: column;
 }
 
@@ -142,7 +144,7 @@ footer {
   grid-area: sectionD;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: justify;
   flex-direction: column;
 }
 
@@ -163,6 +165,12 @@ footer {
     display: grid;
     grid-template-areas: "header" "sectionA" "sectionB" "sectionC" "sectionD" "nav" "main" "footer";
   }
+}
+.whatsapp {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  z-index: 1;
 }
 
 /*# sourceMappingURL=estilo.css.map */
