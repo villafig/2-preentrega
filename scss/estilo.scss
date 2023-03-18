@@ -71,6 +71,7 @@ header{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    box-sizing: border-box;
 }
 
 nav{
@@ -80,6 +81,7 @@ nav{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    box-sizing: border-box;
 }
 
 main{
@@ -89,6 +91,7 @@ main{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    box-sizing: border-box;
 }
 
 footer{
@@ -99,6 +102,7 @@ footer{
     align-items: center;
     height: 100px;
     text-transform: lowercase;
+    box-sizing: border-box;
 }
 
 .circulo {
@@ -106,6 +110,7 @@ footer{
     width: 50%;
     height: auto;
     display: flex;
+    box-sizing: border-box;
   }
 
 
@@ -116,12 +121,15 @@ footer{
     align-items: center;
     justify-content: center;
     flex-direction: column; 
+    text-align: center;
+    box-sizing: border-box;
 }
 
 .sectionA p {
     margin: 100px;
-    justify-content:safe;
-    
+    justify-content:center;
+    align-items: center;
+    box-sizing: border-box;
 } 
 
 .sectionB{
@@ -131,6 +139,8 @@ footer{
     align-items: center;
     justify-content: justify;
     flex-direction: column;
+    text-align: center;
+    box-sizing: border-box;
 }
 .sectionC{
     background-color: white;
@@ -139,6 +149,8 @@ footer{
     align-items: center;
     justify-content: justify;
     flex-direction: column;
+    text-align: center;
+    box-sizing: border-box;
 }
 
 .sectionD{
@@ -148,11 +160,14 @@ footer{
     align-items: center;
     justify-content: justify;
     flex-direction: column;
+    text-align: center;
+    box-sizing: border-box;
 }
 
-@media (max-width: 1700px){
+@media (min-width:901px){
     .gridpadre {
         display: grid;
+        gap: 20px;
         grid-template-areas: 
         "header header"
         "main main"
@@ -164,10 +179,11 @@ footer{
     }
 }
 
-@media (max-width: 700px){
+@media (min-width:415px) and (max-width:900px){
     .gridpadre {
         display: grid;
-        grid-template-areas: 
+        gap: 20px;
+        grid-template-areas:
         "header header"
         "main main"
         "nav nav"
@@ -178,24 +194,51 @@ footer{
     }
 }
 
-@media (max-width: 300px){
+@media (max-width:414px){
     .gridpadre {
         display: grid;
-        grid-template-areas: 
+        gap: 20px;
+        grid-template-areas:
         "header"
+        "main"
+        "nav"
         "sectionA"
         "sectionB"
         "sectionC"
         "sectionD"
-        "nav"
-        "main"
         "footer"
     }
 }
 
 .whatsapp{
-    position: fixed;
-    right: 10px;
-    bottom: 10px;
+    position:fixed;
+    right: 100px;
+    bottom: 100px;
     z-index: 1;
+}
+
+.formulario{
+    width: 500px;
+    background-color: #28B431 ;
+    margin-top: 150px;
+    border: 30px;
+    box-sizing: border-box;
+}
+
+.formulario{
+    font-size: 22px;
+    margin-bottom: 20px;
+    border: 30px;
+}
+
+.controls{
+    width: 250px;
+    margin-bottom: 20px;
+    border: 10px;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+.contacto{
+    text-align: center;
 }

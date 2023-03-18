@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Contáctanos de manera muy sencilla">
     <title>Contacto - The Golf MX</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/estilo.css">
 </head>
 <body class="gridpadre">
@@ -17,7 +18,7 @@
         <nav>
             <ul>
                 <li><a href="Reservaciones.html">Reservaciones</a></li>
-                <li><a href="Eventos.html">Eventos Privados / Torneos</a></li>
+                <li><a href="Eventos.html">Eventos Privados</a></li>
                 <li><a href="Restaurante.html">Restaurante</a></li>
                 <li><a href="Contacto.html">Contacto</a></li>
             </ul>
@@ -34,43 +35,39 @@
         <br>
         <br>
         <br>
-
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3756.713987507834!2d-101.18424784981205!3d19.682203937687447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842d0de7d6194fa3%3A0x4b63d5e5686e0974!2sCentro%20de%20Convenciones%20y%20Exposiciones%20de%20Morelia!5e0!3m2!1ses-419!2smx!4v1675494387641!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3757.0590580347707!2d-101.17480928569394!3d19.6674856382256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842d0dc310226277%3A0x5190620cffd9546!2sTHE%20GOLF!5e0!3m2!1ses-419!2smx!4v1679041208987!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
         <br>
         <br>
+        <form class="formulario" action="formulario">
+            <h3 class="contacto">Contacto</h3>
+            <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su nombre">
+            <input class="controls" type="text" name="telefono" id="telefono" placeholder="Ingrese su telefono">
+            <input class="controls" type="text" name="correo" id="correo" placeholder="Ingrese su correo">
+            <input class="boton" type="submit" value="Enviar">
+        </form>
         <br>
         <br>
     
-    <section class="sectionA">
+    <section data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine" class="sectionA">
         Tenemos torneos para que juegues con tus amigos y puedas competir con otros equipos
 
-    <img src="../imagenes primer entrega/golf_3.jpeg" alt="jugando golf"
-    width="400px">
+    <img src="../imagenes primer entrega/golf_3.jpeg" alt="jugando golf" width="400px">
     <br>
     <br>
     </section>
 
-    <section class="sectionB">
+    <section data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine" class="sectionB">
         Tenemos torneos para que juegues con tus amigos y puedas competir con otros equipos
         <img src="../imagenes primer entrega/golf_4.jpeg" alt="golf_2" width="400px">
         <br>
         <br>
     </section>
-    
-    <section class="sectionC">
-        Puedes Invertir en nuestros futuros proyectos
-        <img src="../imagenes primer entrega/golf_5.jpeg" alt="golf_3" width="400px">
-        <br>
-        <br>
-    </section>
-    
-    <section class="sectionD">
-        Únete a nuestro equipo
-        <img src="../imagenes primer entrega/golf_5.jpeg" alt="golf_4" width="400px">
-        <br>
-        <br>
-    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+ 
     
     <footer class="Piedepagina">
         <h3>Todos los derechos reservados</h3>
@@ -78,6 +75,11 @@
             <li><img src="../imagenes primer entrega/instagram_logo.png" alt="instagram_logo" height="50px"></li> 
         </ul>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     
 </body>
 </html>
