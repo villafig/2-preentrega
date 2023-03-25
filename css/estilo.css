@@ -85,7 +85,7 @@ main {
 }
 
 .sectionA {
-  background-color: white;
+  background-color: green;
   grid-area: sectionA;
   display: flex;
   flex-direction: column;
