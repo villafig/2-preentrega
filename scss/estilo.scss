@@ -72,6 +72,18 @@ main{
     text-align: center;
 }
 
+nav{
+    background-color: white;
+    grid-area: navs;
+    display: flex;
+    flex-direction: column;
+    position: relative; 
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+}
+
 .circulo {
     border-radius: 10%;
     width: 30%;
@@ -165,14 +177,22 @@ footer{
         display: grid;
         grid-template-areas:
         "headers"
-        "nav"
+        "navs"
         "main"
         "sectionA"
         "sectionB"
         "sectionC"
         "sectionD"
         "footer"
+        ;
     }
+    main{
+        display: none;
+    }
+    nav{
+        display: none;
+    }
+    
 }
 
 @media (min-width:768px) and (max-width:990px){
@@ -180,7 +200,7 @@ footer{
         display: grid;
         grid-template-areas: 
         "headers headers"
-        "nav nav"
+        "navs navs"
         "main main"
         "sectionA sectionB"
         "sectionC sectionD"
@@ -188,19 +208,20 @@ footer{
         ;
     }
 
-    .header{
+    main{
+        display: none;
+    }
+    nav{
         display: none;
     }
 }
-
-
 
 @media (min-width:991px){
     .gridpadre {
         display: grid;
         grid-template-areas: 
         "headers headers"
-        "nav nav"
+        "navs navs"
         "main main"
         "sectionA sectionB"
         "sectionC sectionD"
