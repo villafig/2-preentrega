@@ -1,14 +1,7 @@
 * {
   font-family: "Aboreto", cursive;
   margin: auto;
-}
-
-.tituloprincipal {
-  background-image: url(https://es.dreamstime.com/textura-de-pasto-artificial-cierre-fondo-pantalla-y-concepto-image185600962);
-  grid-area: header;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  text-align: center;
 }
 
 ul {
@@ -22,11 +15,12 @@ ul {
 
 .logoprincipal {
   display: flex;
-  background-image: url(https://es.dreamstime.com/textura-de-pasto-artificial-cierre-fondo-pantalla-y-concepto-image185600962);
+  background-color: white;
+  grid-area: logoprincipal;
 }
 
 .logo_1 {
-  background-image: url(https://www.freepik.es/fotos-premium/fondo-textura-pasto-piso-pasto-sintetico_20920648.htm);
+  background-color: white;
   flex: display;
   width: 35%;
   height: 250px;
@@ -48,34 +42,31 @@ ul {
 }
 
 h1 {
-  background-image: url(https://www.freepik.es/fotos-premium/fondo-textura-pasto-piso-pasto-sintetico_20920648.htm);
-  text-decoration: underline;
-  text-align: center;
-}
-
-main {
-  text-align: center;
-  box-sizing: border-box;
-}
-
-nav {
   background-color: white;
-  grid-area: nav;
+  text-align: center;
+  font-style: normal;
+  font-size: 60px;
+}
+
+header {
+  background-color: white;
+  grid-area: headers;
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
-  box-sizing: border-box;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
 
 main {
-  background-image: url(https://www.freepik.es/fotos-premium/fondo-textura-pasto-piso-pasto-sintetico_20920648.htm);
+  background-color: white;
   grid-area: main;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  box-sizing: border-box;
+  text-align: center;
 }
 
 .circulo {
@@ -83,59 +74,54 @@ main {
   width: 30%;
   height: auto;
   display: flex;
-  box-sizing: border-box;
 }
 
 .sectionA {
-  background-image: url(https://es.dreamstime.com/textura-de-pasto-artificial-cierre-fondo-pantalla-y-concepto-image185600962);
+  background-color: white;
   grid-area: sectionA;
   display: flex;
   flex-direction: column;
   position: relative;
-  margin-left: 250px;
   justify-content: center;
   text-align: center;
   align-items: center;
 }
 
 .sectionB {
-  background-image: url(https://www.freepik.es/fotos-premium/fondo-textura-pasto-piso-pasto-sintetico_20920648.htm);
+  background-color: white;
   grid-area: sectionB;
   display: flex;
   flex-direction: column;
   position: relative;
-  margin-right: 250px;
   justify-content: center;
   text-align: center;
   align-items: center;
 }
 
 .sectionC {
-  background-image: url(https://www.freepik.es/fotos-premium/fondo-textura-pasto-piso-pasto-sintetico_20920648.htm);
+  background-color: white;
   grid-area: sectionC;
   display: flex;
   flex-direction: column;
   position: relative;
-  margin-left: 250px;
   justify-content: center;
   text-align: center;
   align-items: center;
 }
 
 .sectionD {
-  background-image: url(https://www.freepik.es/fotos-premium/fondo-textura-pasto-piso-pasto-sintetico_20920648.htm);
+  background-color: white;
   grid-area: sectionD;
   display: flex;
   flex-direction: column;
   position: relative;
-  margin-right: 250px;
   justify-content: center;
   text-align: center;
   align-items: center;
 }
 
 footer {
-  background-image: url(https://www.freepik.es/fotos-premium/fondo-textura-pasto-piso-pasto-sintetico_20920648.htm);
+  background-color: white;
   grid-area: footer;
   display: flex;
   align-items: center;
@@ -146,27 +132,6 @@ footer {
   list-style: none;
 }
 
-@media (min-width: 901px) {
-  .gridpadre {
-    display: grid;
-    gap: 20px;
-    grid-template-areas: "header header" "main main" "nav nav" "sectionA sectionB" "sectionC sectionD" "footer footer";
-  }
-}
-@media (min-width: 415px) and (max-width: 1200px) {
-  .gridpadre {
-    display: grid;
-    gap: 20px;
-    grid-template-areas: "titulo principal titulo principal" "main main" "nav nav" "sectionD sectionC" "sectionB sectionA" "footer footer";
-  }
-}
-@media (max-width: 414px) {
-  .gridpadre {
-    display: grid;
-    gap: 20px;
-    grid-template-areas: "header" "main" "nav" "sectionA" "sectionB" "sectionC" "sectionD" "footer";
-  }
-}
 .whatsapp {
   position: fixed;
   right: 100px;
@@ -190,6 +155,28 @@ footer {
   margin-bottom: 20px;
   border: 10px;
   font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .gridpadre {
+    display: grid;
+    grid-template-areas: "headers" "nav" "main" "sectionA" "sectionB" "sectionC" "sectionD" "footer";
+  }
+}
+@media (min-width: 768px) and (max-width: 990px) {
+  .gridpadre {
+    display: grid;
+    grid-template-areas: "headers headers" "nav nav" "main main" "sectionA sectionB" "sectionC sectionD" "footer footer";
+  }
+  .header {
+    display: none;
+  }
+}
+@media (min-width: 991px) {
+  .gridpadre {
+    display: grid;
+    grid-template-areas: "headers headers" "nav nav" "main main" "sectionA sectionB" "sectionC sectionD" "footer footer";
+  }
 }
 
 /*# sourceMappingURL=estilo.css.map */
