@@ -2,8 +2,11 @@
     font-family: 'Aboreto', cursive;
     margin: auto;
     text-align: center;
+    background-image: url("../imagenes\ primer\ entrega/pastoOk.jpeg");
+    background-repeat: repeat repeat-y;
+    background-size: 400px 200px; 
+
 }
-   
 
 ul{
     display: flex;
@@ -47,6 +50,7 @@ h1{
     text-align: center;
     font-style: normal;
     font-size: 60px;
+    color: black;
 }
 
 
@@ -86,7 +90,7 @@ nav{
 
 .circulo {
     border-radius: 10%;
-    width: 30%;
+    width: auto;
     height: auto;
     display: flex;
   }
@@ -101,6 +105,8 @@ nav{
     justify-content: center;
     text-align: center;
     align-items: center;
+    line-height: 0;
+    padding: 0%;
 }
 
 .sectionB{
@@ -136,15 +142,16 @@ nav{
 }
 
 footer{
-    background-color: white;
+    background-color: green;
     grid-area: footer;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    height: 200px;
-    width: 800px;
+    height: 150px;
+    width: auto;
     list-style: none;
+    text-transform: capitalize;
 }
 
 .whatsapp{
@@ -174,7 +181,7 @@ footer{
 
 @media (max-width:768px){
     .gridpadre {
-        display: grid;
+        display: grid;  
         grid-template-areas:
         "headers"
         "navs"
@@ -192,7 +199,6 @@ footer{
     nav{
         display: none;
     }
-    
 }
 
 @media (min-width:768px) and (max-width:990px){
