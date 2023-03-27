@@ -105,8 +105,6 @@ nav{
     justify-content: center;
     text-align: center;
     align-items: center;
-    line-height: 0;
-    padding: 0%;
 }
 
 .sectionB{
@@ -147,8 +145,8 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
-    height: 150px;
+    flex-direction: column;
+    height: 250px;
     width: auto;
     list-style: none;
     text-transform: capitalize;
@@ -156,7 +154,7 @@ footer{
 
 .whatsapp{
     position:fixed;
-    right: 100px;
+    right: 5px;
     bottom: 100px;
     z-index: 1;
     height: 10px;
@@ -165,7 +163,7 @@ footer{
 
 .formulario{
     display: flex;
-    margin-left: 600px;
+    margin: auto;
     background-color: white;
     flex-direction: column;
     justify-content: center;
