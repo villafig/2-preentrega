@@ -100,6 +100,7 @@ nav {
   justify-content: center;
   text-align: center;
   align-items: center;
+  font-size: 25px;
 }
 
 .sectionB {
@@ -111,6 +112,7 @@ nav {
   justify-content: center;
   text-align: center;
   align-items: center;
+  font-size: 25px;
 }
 
 .sectionC {
@@ -122,6 +124,7 @@ nav {
   justify-content: center;
   text-align: center;
   align-items: center;
+  font-size: 25px;
 }
 
 .sectionD {
@@ -133,6 +136,8 @@ nav {
   justify-content: center;
   text-align: center;
   align-items: center;
+  font-size: 25px;
+  padding: 0%;
 }
 
 footer {
@@ -151,10 +156,10 @@ footer {
 .whatsapp {
   position: fixed;
   right: 5px;
-  bottom: 100px;
   z-index: 1;
   height: 10px;
-  box-sizing: border-box;
+  bottom: 1px;
+  top: 1px;
 }
 
 .formulario {
