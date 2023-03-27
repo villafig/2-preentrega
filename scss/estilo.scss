@@ -119,30 +119,32 @@ nav{
     align-items: center;
     font-size: 25px;
 }
+
 .sectionC{
     background-color: white;
     grid-area: sectionC;
-    display: flex;
+    display:flex;
     flex-direction: column;
-    position: relative;
+    position:relative;
     justify-content: center;
     text-align: center;
     align-items: center;
     font-size: 25px;
 }
 
+
 .sectionD{
     background-color: white;
     grid-area: sectionD;
     display: flex;
     flex-direction: column;
-    position: relative;
+    position:relative;
     justify-content: center;
     text-align: center;
     align-items: center;
     font-size: 25px;
-    padding: 0%;
 }
+
 
 footer{
     background-color: green;
