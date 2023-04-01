@@ -11,40 +11,48 @@ header {
   padding: 50px;
   background-color: aqua;
   text-align: center;
-  grid-area: headers;
+}
+
+nav {
+  display: flex;
+  background-color: aquamarine;
+}
+
+.whatsapp {
+  display: flex;
+  background-color: blue;
+  height: 100px;
 }
 
 nav {
   background-color: green;
-  display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   justify-content: space-around;
   height: 100px;
-  grid-area: navs;
 }
 
 main {
   background-color: blueviolet;
+  color: white;
   display: flex;
   flex-direction: column;
   height: 500px;
   justify-content: center;
   align-items: center;
-  grid-area: main;
 }
 
 .logo_1 {
-  height: 250px;
+  height: 300px;
 }
 
 .logo_2 {
-  height: 250px;
+  height: 300px;
 }
 
 .logo_3 {
-  height: 250px;
+  height: 300px;
 }
 
 .sectionA {
@@ -53,8 +61,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 400px;
-  grid-area: sectionA;
+  height: 300px;
 }
 
 .sectionA a {
@@ -75,8 +82,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 400px;
-  grid-area: sectionB;
+  height: 300px;
 }
 
 .sectionB a {
@@ -97,8 +103,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 400px;
-  grid-area: sectionC;
+  height: 300px;
 }
 
 .sectionC a {
@@ -116,74 +121,29 @@ main {
 .sectionD {
   background-color: brown;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 400px;
-  grid-area: sectionD;
+  height: 300px;
 }
 
 .sectionD img {
-  height: 150px;
+  height: 200px;
 }
 
 .sectionD .instagramlogo {
-  height: 90px;
+  height: 122px;
 }
 
 .whatsapp {
   background-color: red;
   justify-content: end;
-  position: fixed;
+  position: sticky;
   align-items: center;
 }
 
 .whatsapp img {
   height: 100px;
-}
-
-footer {
-  background-color: bisque;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  grid-area: footer;
-}
-
-footer img {
-  height: 150px;
-}
-
-@media (max-width: 768px) {
-  .gridpadre {
-    display: grid;
-    grid-template-areas: "headers" "navs" "main" "sectionA" "sectionB" "sectionC" "sectionD" "footer";
-  }
-  main {
-    display: none;
-  }
-  nav {
-    display: none;
-  }
-}
-@media (min-width: 768px) and (max-width: 990px) {
-  .gridpadre {
-    display: grid;
-    grid-template-areas: "headers headers" "navs navs" "main main" "sectionA sectionB" "sectionC sectionD" "footer footer";
-  }
-  main {
-    display: none;
-  }
-  nav {
-    display: none;
-  }
-}
-@media (min-width: 991px) {
-  .gridpadre {
-    display: grid;
-    grid-template-areas: "headers headers" "navs navs" "main main" "sectionA sectionB" "sectionC sectionD" "footer footer";
-  }
 }
 
 /*# sourceMappingURL=estilo.css.map */

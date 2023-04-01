@@ -1,187 +1,163 @@
 *{
     font-family: 'Aboreto', cursive;
-    margin: auto;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    padding: 50px;
+    background-color: aqua;
     text-align: center;
-    background-image: url("../imagenes\ primer\ entrega/pastoOKOK.webp");
-    background-repeat: repeat repeat-y;
-    background-size: 400px 200px; 
-
+    grid-area: headers;
 }
 
-ul{
+
+nav{
+    background-color: green;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    list-style: none;
-    flex-direction: row;
-    width: 700px;
+    text-align: center;
+    justify-content: space-around;
+    height: 100px;
+    grid-area: navs;
 }
 
-.logoprincipal{
+main{
+    background-color: blueviolet;
     display: flex;
-    background-color: white;
-    grid-area: logoprincipal;
+    flex-direction: column;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    grid-area: main;
 }
 
-.logo_1{    
-    background-color: white;
-    flex: display;
-    width: 35%;
-    height: 250px;
-    border-radius: 4%;
+.logo_1{
+    height: 250px;  
 }
 
 .logo_2{
-    flex: display;
-    width: 35%;
     height: 250px;
-    border-radius: 4%;
-}
+ }
 
-.logo_3{
-    flex: display;
-    width: 35%;
+ .logo_3{
     height: 250px;
-    border-radius: 4%;
-}
+ }
 
-h1{
-    background-color: white;
-    text-align: center;
-    font-style: normal;
-    font-size: 60px;
-    color: black;
-}
-
-
-header{
-    background-color: white;
-    grid-area: headers;
+ .sectionA{
+    background-color: red;
     display: flex;
     flex-direction: column;
-    position: relative; 
     justify-content: center;
-    text-align: center;
     align-items: center;
-}
-
-
-main{
-    background-color: white;
-    grid-area: main;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-
-nav{
-    background-color: white;
-    grid-area: navs;
-    display: flex;
-    flex-direction: column;
-    position: relative; 
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-
-}
-
-.circulo {
-    border-radius: 10%;
-    width: auto;
-    height: auto;
-    display: flex;
-  }
-
-
-.sectionA{
-    background-color: white;
+    height: 400px;
     grid-area: sectionA;
+ }
+
+.sectionA a{
     display: flex;
-    flex-direction: column;
-    position: relative;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
     text-align: center;
-    align-items: center;
-    font-size: 25px;
+}
+
+.sectionA img{
+    height: 200px;
+
 }
 
 .sectionB{
-    background-color: white;
-    grid-area: sectionB;
+    background-color: maroon;
     display: flex;
     flex-direction: column;
-    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    grid-area: sectionB;
+ }
+
+.sectionB a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
     text-align: center;
-    align-items: center;
-    font-size: 25px;
+}
+
+.sectionB img{
+    height: 200px;
+
 }
 
 .sectionC{
-    background-color: white;
-    grid-area: sectionC;
-    display:flex;
+    background-color: magenta;
+    display: flex;
     flex-direction: column;
-    position:relative;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    grid-area: sectionC;
+ }
+
+.sectionC a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
     text-align: center;
-    align-items: center;
-    font-size: 25px;
 }
 
+.sectionC img{
+    height: 200px;
+
+}
 
 .sectionD{
-    background-color: white;
-    grid-area: sectionD;
+    background-color: brown;
     display: flex;
     flex-direction: column;
-    position:relative;
     justify-content: center;
-    text-align: center;
-    align-items: center;
-    font-size: 25px;
+    align-items:center;
+    height: 400px;
+    grid-area: sectionD;
+ }
+
+.sectionD img{
+    height: 150px;
+
 }
 
-
-footer{
-    background-color: green;
-    grid-area: footer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 250px;
-    width: auto;
-    list-style: none;
-    text-transform: capitalize;
+.sectionD .instagramlogo{
+    height: 90px;
 }
 
 .whatsapp{
-    position:fixed;
-    right: 5px;
-    z-index: 1;
-    height: 10px;
-    bottom: 1px;
-    top: 1px;
+    background-color: red;
+    justify-content: end;
+    position: fixed;
+    align-items: center;
+
+}
+.whatsapp img{
+    height: 100px;
 }
 
-.formulario{
+footer{
+    background-color: bisque;
     display: flex;
-    margin: auto;
-    background-color: white;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    grid-area: footer;
 }
 
-.controls{
-    width: 250px;
-    margin-bottom: 20px;
-    border: 10px;
-    font-size: 18px;
+footer img{
+    height: 150px;
 }
 
 @media (max-width:768px){
