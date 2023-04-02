@@ -1,0 +1,189 @@
+* {
+  font-family: "Aboreto", cursive;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding: 50px;
+  background-color: aqua;
+  text-align: center;
+  grid-area: headers;
+}
+
+nav {
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  height: 100px;
+  grid-area: navs;
+}
+
+main {
+  background-color: blueviolet;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  grid-area: main;
+}
+
+.logo_1 {
+  height: 250px;
+}
+
+.logo_2 {
+  height: 250px;
+}
+
+.logo_3 {
+  height: 250px;
+}
+
+.sectionA {
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  grid-area: sectionA;
+}
+
+.sectionA a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.sectionA img {
+  height: 200px;
+}
+
+.sectionB {
+  background-color: maroon;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  grid-area: sectionB;
+}
+
+.sectionB a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.sectionB img {
+  height: 200px;
+}
+
+.sectionC {
+  background-color: magenta;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  grid-area: sectionC;
+}
+
+.sectionC a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.sectionC img {
+  height: 200px;
+}
+
+.sectionD {
+  background-color: brown;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  grid-area: sectionD;
+}
+
+.sectionD img {
+  height: 150px;
+}
+
+.sectionD .instagramlogo {
+  height: 90px;
+}
+
+.whatsapp {
+  background-color: red;
+  justify-content: end;
+  position: fixed;
+  align-items: center;
+}
+
+.whatsapp img {
+  height: 100px;
+}
+
+footer {
+  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-area: footer;
+}
+
+footer img {
+  height: 150px;
+}
+
+@media (max-width: 768px) {
+  .gridpadre {
+    display: grid;
+    grid-template-areas: "headers" "navs" "main" "sectionA" "sectionB" "sectionC" "sectionD" "footer";
+  }
+  main {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 990px) {
+  .gridpadre {
+    display: grid;
+    grid-template-areas: "headers headers" "navs navs" "main main" "sectionA sectionB" "sectionC sectionD" "footer footer";
+  }
+  main {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+}
+@media (min-width: 991px) {
+  .gridpadre {
+    display: grid;
+    grid-template-areas: "headers headers" "navs navs" "main main" "sectionA sectionB" "sectionC sectionD" "footer footer";
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */
