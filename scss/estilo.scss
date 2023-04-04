@@ -1,22 +1,27 @@
-*{
+* {
     font-family: 'Aboreto', cursive;
+    background-image: url("../imagenes\ primer\ entrega/pastoOKOK.webp");
+    background-repeat: repeat repeat-y;
+    background-size: 400px 200px;
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
 }
 
-header{
+header {
     padding: 50px;
     background-color: aqua;
+    color: white;
     text-align: center;
     grid-area: headers;
 }
 
-nav{
+nav {
     background-color: green;
     display: flex;
+    color: white;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -25,39 +30,45 @@ nav{
     grid-area: navs;
 }
 
-main{
+nav .navegacion{
+    color: white;
+}
+
+main {
     background-color: blueviolet;
+    color: white;
     display: flex;
     flex-direction: column;
-    height: 500px;
+    height: 300px;
     justify-content: center;
     align-items: center;
     grid-area: main;
 }
 
-.logo_1{
-    height: 250px;  
+.logo_1 {
+    height: 200px;
 }
 
-.logo_2{
-    height: 250px;
- }
+.logo_2 {
+    height: 200px;
+}
 
- .logo_3{
-    height: 250px;
- }
+.logo_3 {
+    height: 200px;
+}
 
- .sectionA{
+.sectionA {
     background-color: red;
     display: flex;
+    color: white;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 400px;
     grid-area: sectionA;
- }
+}
 
-.sectionA a{
+.sectionA a {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -65,22 +76,23 @@ main{
     text-align: center;
 }
 
-.sectionA img{
+.sectionA img {
     height: 200px;
 
 }
 
-.sectionB{
+.sectionB {
     background-color: maroon;
     display: flex;
+    color: white;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 400px;
     grid-area: sectionB;
- }
+}
 
-.sectionB a{
+.sectionB a {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -88,130 +100,121 @@ main{
     text-align: center;
 }
 
-.sectionB img{
+.sectionB img {
     height: 200px;
 
 }
 
-.sectionC{
+.sectionC {
     background-color: magenta;
     display: flex;
+    color: white;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 400px;
     grid-area: sectionC;
- }
+}
 
-.sectionC a{
+.sectionC a {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
 
-.sectionC img{
+.sectionC img {
     height: 200px;
 
 }
 
-.sectionD{
+.sectionD {
     background-color: brown;
     display: flex;
+    color: white;
     flex-direction: column;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     height: 400px;
     grid-area: sectionD;
- }
-
-.sectionD img{
-    height: 150px;
-
 }
 
-.sectionD .instagramlogo{
-    height: 90px;
+.sectionD img {
+    height: 200px;
 }
 
-.whatsapp{
-    background-color: red;
-    justify-content: end;
-    position: fixed;
-    align-items: center;
-
-}
-.whatsapp img{
+.sectionD .instagram_logo {
     height: 100px;
 }
 
-footer{
+footer {
     background-color: bisque;
     display: flex;
+    color: white;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     grid-area: footer;
 }
 
-footer img{
+footer img {
     height: 150px;
 }
 
-@media (max-width:768px){
+@media (max-width:768px) {
     .gridpadre {
-        display: grid;  
+        display: grid;
         grid-template-areas:
-        "headers"
-        "navs"
-        "main"
-        "sectionA"
-        "sectionB"
-        "sectionC"
-        "sectionD"
-        "footer"
-        ;
+            "headers"
+            "navs"
+            "main"
+            "sectionA"
+            "sectionB"
+            "sectionC"
+            "sectionD"
+            "footer";
     }
-    main{
+
+    main {
         display: none;
     }
-    nav{
+
+    nav {
         display: none;
     }
 }
 
-@media (min-width:768px) and (max-width:990px){
+@media (min-width:768px) and (max-width:990px) {
     .gridpadre {
         display: grid;
-        grid-template-areas: 
-        "headers headers"
-        "navs navs"
-        "main main"
-        "sectionA sectionB"
-        "sectionC sectionD"
-        "footer footer"
-        ;
+        grid-template-areas:
+            "headers headers"
+            "navs navs"
+            "main main"
+            "sectionA sectionB"
+            "sectionC sectionD"
+            "footer footer";
     }
 
-    main{
+    main {
         display: none;
     }
-    nav{
+
+    nav {
         display: none;
     }
 }
 
-@media (min-width:991px){
+@media (min-width:991px) {
     .gridpadre {
         display: grid;
-        grid-template-areas: 
-        "headers headers"
-        "navs navs"
-        "main main"
-        "sectionA sectionB"
-        "sectionC sectionD"
-        "footer footer"
-        ;
+        grid-template-areas:
+            "headers headers"
+            "navs navs"
+            "main main"
+            "sectionA sectionB"
+            "sectionC sectionD"
+            "footer footer";
     }
 }
