@@ -18,6 +18,10 @@ header {
     grid-area: headers;
 }
 
+header a{
+    color: white;
+}
+
 nav {
     background-color: green;
     display: flex;
@@ -39,7 +43,7 @@ main {
     color: white;
     display: flex;
     flex-direction: column;
-    height: 300px;
+    height: 250px;
     justify-content: center;
     align-items: center;
     grid-area: main;
