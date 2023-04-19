@@ -135,12 +135,16 @@ main {
   grid-area: sectionD;
 }
 
-.sectionD img {
-  height: 200px;
+.sectionD a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-.sectionD .instagram_logo {
-  height: 100px;
+.sectionD img {
+  height: 200px;
 }
 
 footer {
@@ -166,6 +170,24 @@ footer img {
   }
   nav {
     display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 990px) {
+  .gridpadre {
+    display: grid;
+    grid-template-areas: "headers headers" "navs navs" "main main" "sectionA sectionB" "sectionC sectionD" "footer footer";
+  }
+  main {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+}
+@media (min-width: 991px) {
+  .gridpadre {
+    display: grid;
+    grid-template-areas: "headers headers" "navs navs" "main main" "sectionA sectionB" "sectionC sectionD" "footer footer";
   }
 }
 .container-boton {
@@ -197,24 +219,6 @@ footer img {
   }
   100% {
     box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
-  }
-}
-@media (min-width: 768px) and (max-width: 990px) {
-  .gridpadre {
-    display: grid;
-    grid-template-areas: "headers headers" "navs navs" "main main" "sectionA sectionB" "sectionC sectionD" "footer footer";
-  }
-  main {
-    display: none;
-  }
-  nav {
-    display: none;
-  }
-}
-@media (min-width: 991px) {
-  .gridpadre {
-    display: grid;
-    grid-template-areas: "headers headers" "navs navs" "main main" "sectionA sectionB" "sectionC sectionD" "footer footer";
   }
 }
 

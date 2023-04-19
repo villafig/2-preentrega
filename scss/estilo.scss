@@ -138,13 +138,19 @@ main {
     grid-area: sectionD;
 }
 
+.sectionD a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 .sectionD img {
     height: 200px;
 }
 
-.sectionD .instagram_logo {
-    height: 100px;
-}
+
 
 footer {
     display: flex;
@@ -182,37 +188,7 @@ footer img {
     }
 }
 
-.container-boton{
-    background-color: #2e6329;
-    border: 1px solid #fff;
-    position: fixed;
-    z-index: 1;
-    border-radius: 90%;
-    bottom: 20px;
-    right: 25px;
-    padding: 15px;
-    transition: ease 0.3s;
-    animation: efecto 1.2s infinite;
-}
 
-.container-boton:hover{
-    transform: scale(1.1);
-    transition: 0.3s;
-}
-
-.boton{
-    width: 80px;
-    transition: ease 1s;
-}
-
-@keyframes efecto{
-    0%{
-        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
-    }
-    100%{
-        box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
-    }
-}
 
 @media (min-width:768px) and (max-width:990px) {
     .gridpadre {
@@ -245,5 +221,37 @@ footer img {
             "sectionA sectionB"
             "sectionC sectionD"
             "footer footer";
+    }
+}
+
+.container-boton{
+    background-color: #2e6329;
+    border: 1px solid #fff;
+    position: fixed;
+    z-index: 1;
+    border-radius: 90%;
+    bottom: 20px;
+    right: 25px;
+    padding: 15px;
+    transition: ease 0.3s;
+    animation: efecto 1.2s infinite;
+}
+
+.container-boton:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.boton{
+    width: 80px;
+    transition: ease 1s;
+}
+
+@keyframes efecto{
+    0%{
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
+    }
+    100%{
+        box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
     }
 }
